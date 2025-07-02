@@ -8,7 +8,7 @@ import uvicorn
 app = FastAPI()
 
 DEEPAI_API_URL = "https://api.deepai.org/api/nsfw-detector"
-DEEPAI_API_KEY = "b7be32e8-f077-4405-81f6-786e24213df8"
+DEEPAI_API_KEY = ""
 
 @app.post("/moderate")
 async def moderate_image(file: UploadFile):
